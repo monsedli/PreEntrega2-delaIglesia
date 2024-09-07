@@ -1,0 +1,466 @@
+/*
+0- * - todo el sitio
+1-!important - va al final
+2-id - #
+3-class - .
+4-selectores / etiquetas - por ej h1
+*/
+
+/*formato de doc*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: none;
+    text-decoration: none !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+#body {
+    background-color: white;
+    max-width: 1920px;
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    max-width: 1920px;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+ul , li {
+    list-style: none; /*lista sin puntos*/
+    display: inline-block; /*lista ocupa bloques en lugar de lineas*/
+}
+
+ul li a:hover {
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.logo_header {
+    width: 40px;
+    height: 40px;
+}
+
+.logo_header:hover {
+    width: 45px;
+    height: 45px;
+    transition: 0.3s;
+}
+
+#header__navegacion {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px 0 5px;
+    display: flex;
+    justify-content: space-between; /*alinea horizontalmente*/
+    align-items: center; /*alinea verticalmente */
+    background-color: #EBADB9
+}
+
+#header__navegacion ul li a {
+    font-size: 18px;
+    color: #E66440;
+    padding: 5px;
+}
+
+#main {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.portada_contacto , .portada_proyectos , .portada_cv , .portada_index , .ondas_footer , .portada_about , .gif_main , .about_main , .cuadricula_main {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.grid_index {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    width: 100%;
+    height: auto;
+}
+
+.socialmedia_index , .graphicdesign_index , .web_index , .artdirection_index {
+    width: 100%;
+    height: auto;
+}
+
+a img:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+h1 , .trabajemos {
+    font-size: 40px;
+    color: #EBADB9;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+}
+
+.trabajemos:hover {
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+h2 {
+    font-size: 20px;
+    color: #E66440;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 100px auto;
+}
+
+.cuadricula_main {
+    width: 100%;
+    height: auto;
+    background-color: #EBDDBC;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.183); 
+    position: relative; 
+}
+
+.texto_about {
+    font-size: 20px;
+    color: #E66440;
+    background-color: #EBDDBC;
+    padding: 100px 200px; 
+}
+
+.texto_about_negrita {
+    font-weight: 600;
+}
+
+.timeline_cv {
+    position: relative;
+    max-width: 800px;
+    margin: 80px auto;
+    font-size: 20px;
+    color: #E66440;
+}
+
+h3 {
+    font-size: 45px;
+    color: #EBDDBC;
+}
+
+.texto_cv_negrita {
+    font-weight: 600;
+}
+
+.contenedor_img_cv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.educacion_cv , .programas_cv {
+    width: 50%;
+    height: auto;
+}
+
+#images {
+    width: 70%;
+    display: grid;
+    margin: 100px 200px;
+    grid-template-columns: repeat(2 50px);
+    grid-template-rows: repeat(5 100px);
+    grid-template-areas: 
+    /*fila 1*/"floralia srtapeel"
+    /*fila 2*/"atipico ch"
+    /*fila 3*/"entrenate zorzal"
+    /*fila 4*/"thomas gula"
+    /*fila 5*/"sedal skip"
+    ;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.marca1 {
+    width: 400px;
+    grid-area: floralia;
+}
+
+.marca1:hover {
+        opacity: 80%;
+        transition: 0,3s;
+    }
+
+.marca2 {
+    width: 400px;
+    grid-area: srtapeel;
+}
+
+.marca2:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+.marca3 {
+    width: 400px;
+    grid-area: atipico;
+}
+
+.marca3:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+.marca4 {
+    width: 400px;
+    grid-area: ch;
+}
+
+.marca4:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+.marca5 {
+    width: 400px;
+    grid-area: entrenate;
+}
+
+.marca5:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+.marca6 {
+    width: 400px;
+    grid-area: zorzal;
+}
+
+.marca6:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+.marca7 {
+    width: 400px;
+    grid-area: thomas;
+}
+
+.marca7:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+.marca8 {
+    width: 400px;
+    grid-area: gula;
+}
+
+.marca8:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+.marca9{
+    width: 400px;
+    grid-area: sedal;
+}
+
+.marca9:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+.marca10 {
+    width: 400px;
+    grid-area: skip;
+}
+
+.marca10:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}cl
+
+.contenedor_contacto {
+    background-color: #EBDDBC;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor_contacto h1 {
+    font-size: 60px;
+}
+
+.contenedor_contacto h2 {
+    font-size: 30px;
+}
+
+.formulario_contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario_contacto input[type="text"], .formulario_contacto textarea {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #EBDDBC;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formulario_contacto textarea {
+    height: 300px; 
+    resize: none; 
+}
+
+.formulario_contacto input[type="submit"] {
+    background-color: #E66440;
+    color: #EBDDBC;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formulario_contacto input[type="submit"]:hover {
+    background-color: #D3543F;
+}
+
+.logo_contacto {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor_informacion {
+    width: 100%;
+    height: auto;
+    padding: 100px 200px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.iconos_contacto1 , .iconos_contacto2 {
+    width: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto_contacto1 , .texto_contacto2 {
+    font-size: 24px;
+    color: #D3543F;
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: #E66440;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 10px 20px;
+    box-sizing: border-box;
+}
+
+.logo_footer img {
+    width: 200px;
+    margin: 20px 0 0 30px;
+}
+
+.links_footer_1 ul , .links_footer_2 ul , a {
+    font-size: 18px;
+    color: #EBDDBC;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.formulario_footer {
+    font-size: 18px;
+    color: #EBDDBC;
+    align-items: center;
+
+}
+
+.formulario_footer input[type="text"] {
+    font-size: 14px;
+    align-items: center;
+    border: 1px solid #E66440;
+    border-radius: 4px;
+}
+
+.redes_footer_behance , .redes_footer_linkedin , .redes_footer_instagram , .redes_footer_youtube {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 0;
+    align-items: center !important;
+    display: inline-block !important;
+}
+
+.redes_footer_behance:hover {
+    width: 50px;
+    height: 50px;
+    transition: 0,3s;
+}
+
+.redes_footer_instagram:hover {
+    width: 50px;
+    height: 50px;
+    transition: 0,3s;
+}
+
+.redes_footer_linkedin:hover {
+    width: 50px;
+    height: 50px;
+    transition: 0,3s;
+}
+
+.redes_footer_youtube:hover {
+    width: 50px;
+    height: 50px;
+    transition: 0,3s;
+}
+
+@media screen and (max-width: 1000px) {
+    #images {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    /*fila 1*/"floralia"
+    /*fila 2*/"srtapeel"
+    /*fila 3*/"atipico"
+    /*fila 4*/"ch"
+    /*fila 5*/"entrenate"
+    /*fila 6*/"zorzal"
+    /*fila 7*/"thomas"
+    /*fila 8*/"gula"
+    /*fila 9*/"sedal"
+    /*fila 10*/"skip"
+    ;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
