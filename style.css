@@ -100,8 +100,7 @@ h1 , .trabajemos {
     font-weight: 700;
     color: #EBADB9;
     font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 50px auto 0 auto;
 }
 
@@ -115,8 +114,7 @@ h2 {
     color: #E66440;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 0 auto 100px auto;
 }
 
@@ -239,11 +237,13 @@ h3 {
 /*PROYECTOS*/
 
 #images {
-    width: 70%;
+    width: 100%;
+    max-width: 1200px;
     display: grid;
-    margin: 100px 200px;
-    grid-template-columns: repeat(2 50px);
-    grid-template-rows: repeat(5 100px);
+    margin: 100px auto;
+    padding: 0 150px;
+    grid-template-columns: repeat(2, fr);
+    grid-template-rows: repeat(5, fr);
     grid-template-areas: 
     /*fila 1*/"floralia srtapeel"
     /*fila 2*/"atipico ch"
@@ -251,109 +251,14 @@ h3 {
     /*fila 4*/"thomas gula"
     /*fila 5*/"sedal skip"
     ;
-    column-gap: 20px;
-    row-gap: 30px;
+    column-gap: 50px;
+    row-gap: 50px;
 }
 
-.marca1 {
-    width: 400px;
-    grid-area: floralia;
+.marca1, .marca2, .marca3, .marca4, .marca5, .marca6, .marca7, .marca8, .marca9, .marca10 {
+    width: 100%;
+    height: auto;
 }
-
-.marca1:hover {
-        opacity: 80%;
-        transition: 0,3s;
-    }
-
-.marca2 {
-    width: 400px;
-    grid-area: srtapeel;
-}
-
-.marca2:hover {
-    opacity: 80%;
-    transition: 0,3s;
-}
-
-.marca3 {
-    width: 400px;
-    grid-area: atipico;
-}
-
-.marca3:hover {
-    opacity: 80%;
-    transition: 0,3s;
-}
-
-.marca4 {
-    width: 400px;
-    grid-area: ch;
-}
-
-.marca4:hover {
-    opacity: 80%;
-    transition: 0,3s;
-}
-
-.marca5 {
-    width: 400px;
-    grid-area: entrenate;
-}
-
-.marca5:hover {
-    opacity: 80%;
-    transition: 0,3s;
-}
-
-.marca6 {
-    width: 400px;
-    grid-area: zorzal;
-}
-
-.marca6:hover {
-    opacity: 80%;
-    transition: 0,3s;
-}
-
-.marca7 {
-    width: 400px;
-    grid-area: thomas;
-}
-
-.marca7:hover {
-    opacity: 80%;
-    transition: 0,3s;
-}
-
-.marca8 {
-    width: 400px;
-    grid-area: gula;
-}
-
-.marca8:hover {
-    opacity: 80%;
-    transition: 0,3s;
-}
-
-.marca9{
-    width: 400px;
-    grid-area: sedal;
-}
-
-.marca9:hover {
-    opacity: 80%;
-    transition: 0,3s;
-}
-
-.marca10 {
-    width: 400px;
-    grid-area: skip;
-}
-
-.marca10:hover {
-    opacity: 80%;
-    transition: 0,3s;
-}cl
 
 /*CONTACTO*/
 
@@ -520,6 +425,8 @@ ul li a:hover {
     #images {
     width: 100%;
     height: auto;
+    margin: 100px auto;
+    padding: 0 80px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -535,7 +442,9 @@ ul li a:hover {
     /*fila 9*/"sedal"
     /*fila 10*/"skip"
     ;
+    row-gap: 30px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -548,5 +457,15 @@ ul li a:hover {
 @media (max-width: 768px) {
     .card {
         width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .grid_index {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 }
