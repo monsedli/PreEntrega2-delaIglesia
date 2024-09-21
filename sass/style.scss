@@ -1,0 +1,145 @@
+/*
+0- * - todo el sitio
+1-!important - va al final
+2-id - #
+3-class - .
+4-selectores / etiquetas - por ej h1
+*/
+
+//ESTILOS RESET Y QUERIES
+@import "formatos/reset";
+@import "formatos/breakpoints";
+//ESTILOS HTML
+@import "formatos/header";
+@import "formatos/body-main";
+@import "formatos/footer";
+
+//PAGE ABOUT
+@import "about/about";
+//PAGE CV
+@import "cv/cv";
+//PAGE PROYECTOS
+@import "proyectos/proyectos";
+//PAGE CONTACTO
+@import "contacto/contacto";
+
+/*MAIN*/
+
+
+
+.portada_contacto , .portada_proyectos , .portada_cv , .portada_index , .ondas_footer , .portada_about , .gif_main , .about_main , .cuadricula_main {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h1 , .trabajemos {
+    font-size: 40px;
+    font-weight: 700;
+    color: #EBADB9;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 50px auto 0 auto;
+}
+
+.trabajemos:hover {
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+h2 {
+    font-size: 20px;
+    color: #E66440;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 100px auto;
+}
+
+/*INDEX*/
+
+h4 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #E66440;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+}
+
+.carousel-inner {
+    padding: 10px 80px 70px 80px;
+}
+
+.card {
+    width: 350px;
+    border: none;
+    border-radius: 30px;
+    background-color: #EBDDBC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    padding: 30px 30px 0 30px;
+    border-radius: 30px;
+    background-color: #EBDDBC;
+}
+
+.card-title {
+    color: #EBADB9;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 0 30px;
+}
+
+.card-text {
+    font-size: 13px;
+    color: #E66440;
+    padding: 0 30px 30px 30px;
+}
+
+.grid_index {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    width: 100%;
+    height: auto;
+}
+
+.socialmedia_index , .graphicdesign_index , .web_index , .artdirection_index {
+    width: 100%;
+    height: auto;
+}
+
+.grid_index a img:hover {
+    opacity: 80%;
+    transition: 0,3s;
+}
+
+/*ABOUT*/
+
+
+
+/*CV*/
+
+
+
+/*PROYECTOS*/
+
+
+/*CONTACTO*/
+
+
+
+/*FOOTER*/
+
+
+
+/*RESPONSIVE*/
+
+
+

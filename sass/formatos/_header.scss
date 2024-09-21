@@ -1,0 +1,52 @@
+#header {
+    max-width: 1920px;
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+    background-color: #EBADB9
+}
+
+.navbar-nav a {
+    font-size: 20px;
+    color: #E66440;
+    padding: 5px;
+}
+
+.navbar-nav a:hover {
+    font-weight: 600;
+    color: #E66440;
+    transition: 0.03s;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(230, 100, 64)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-collapse.show .nav-link {
+    background-color: #ebadb9ee;
+    color: #E66440; 
+    text-align: center;
+    margin: 0px;
+    padding: 2px;
+}
+
+.navbar-collapse.show .nav-link:hover {
+    background-color: #EBADB9;
+    color: #E66440;
+    font-weight: 600;
+}
+
+.navBar__logo {
+    width: 40px;
+    height: 40px;
+}
+
+.navBar__logo:hover {
+    width: 45px;
+    height: 45px;
+    transition: 0.3s;
+}

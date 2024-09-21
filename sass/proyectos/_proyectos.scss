@@ -1,0 +1,23 @@
+#images {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    margin: 100px auto;
+    padding: 0 150px;
+    grid-template-columns: repeat(2, fr);
+    grid-template-rows: repeat(5, fr);
+    grid-template-areas: 
+    /*fila 1*/"floralia srtapeel"
+    /*fila 2*/"atipico ch"
+    /*fila 3*/"entrenate zorzal"
+    /*fila 4*/"thomas gula"
+    /*fila 5*/"sedal skip"
+    ;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.marca1, .marca2, .marca3, .marca4, .marca5, .marca6, .marca7, .marca8, .marca9, .marca10 {
+    width: 100%;
+    height: auto;
+}

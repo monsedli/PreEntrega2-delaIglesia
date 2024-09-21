@@ -1,0 +1,74 @@
+#footer {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: #E66440;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 10px 20px;
+    box-sizing: border-box;
+}
+
+.logo_footer img {
+    width: 200px;
+    margin: 20px 0 0 30px;
+}
+
+ul , li , a {
+    list-style: none; /*lista sin puntos*/
+    font-size: 18px;
+    color: #EBDDBC;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li a:hover {
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.formulario_footer {
+    font-size: 18px;
+    color: #EBDDBC;
+    align-items: center;
+
+}
+
+.formulario_footer input[type="text"] {
+    font-size: 14px;
+    align-items: center;
+    border: 1px solid #E66440;
+    border-radius: 4px;
+}
+
+.redes_footer_behance , .redes_footer_linkedin , .redes_footer_instagram , .redes_footer_youtube {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 0;
+    align-items: center !important;
+    display: inline-block !important;
+}
+
+.redes_footer_behance:hover {
+    width: 50px;
+    height: 50px;
+    transition: 0,3s;
+}
+
+.redes_footer_instagram:hover {
+    width: 50px;
+    height: 50px;
+    transition: 0,3s;
+}
+
+.redes_footer_linkedin:hover {
+    width: 50px;
+    height: 50px;
+    transition: 0,3s;
+}
+
+.redes_footer_youtube:hover {
+    width: 50px;
+    height: 50px;
+    transition: 0,3s;
+}
