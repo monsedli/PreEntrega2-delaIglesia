@@ -1,129 +1,30 @@
-/* Variables */
-$primary-color: #E66440;
-$secondary-color: #EBADB9;
-$background-color: #EBDDBC;
-$font-family-primary: "Montserrat", sans-serif;
-$font-family-secondary: "Poppins", sans-serif;
+//ESTILOS RESET Y QUERIES
+@import "formatos/reset";
+@import "formatos/breakpoints";
+//ESTILOS HTML
+@import "formatos/header";
+@import "formatos/body-main";
+@import "formatos/footer";
 
-/* Mixins */
-@mixin transition-effect($property, $time) {
-  transition: $property $time ease-in-out;
-}
+//PAGE ABOUT
+@import "about/about";
+//PAGE CV
+@import "cv/cv";
+//PAGE PROYECTOS
+@import "proyectos/proyectos";
+//PAGE CONTACTO
+@import "contacto/contacto";
 
-/* Global */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-style: none;
-  text-decoration: none !important;
-  font-family: $font-family-primary;
-}
 
-#body {
-  background-color: white;
-  max-width: 1920px;
-  height: 1000px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
+
+
 
 /* HEADER */
-#header {
-  max-width: 1920px;
-  width: 100%;
-  height: 65px;
-  background-color: $secondary-color;
 
-  .navbar-nav {
-    a {
-      font-size: 20px;
-      color: $primary-color;
-      padding: 5px;
-
-      &:hover {
-        font-weight: 600;
-        color: $primary-color;
-        @include transition-effect(all, 0.03s);
-      }
-    }
-  }
-
-  .navbar-toggler {
-    border: none;
-
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=UTF8,...");
-    }
-  }
-
-  .navbar-collapse.show {
-    .nav-link {
-      background-color: rgba($secondary-color, 0.93);
-      color: $primary-color;
-      text-align: center;
-      margin: 0px;
-      padding: 2px;
-
-      &:hover {
-        background-color: $secondary-color;
-        font-weight: 600;
-      }
-    }
-  }
-
-  .navBar__logo {
-    width: 40px;
-    height: 40px;
-
-    &:hover {
-      width: 45px;
-      height: 45px;
-      @include transition-effect(all, 0.3s);
-    }
-  }
-}
 
 /* MAIN */
-#main {
-  width: 100%;
-  min-height: 100vh;
-}
 
-.portada_contacto, 
-.portada_proyectos, 
-.portada_cv, 
-.portada_index, 
-.ondas_footer, 
-.portada_about, 
-.gif_main, 
-.about_main, 
-.cuadricula_main {
-  max-width: 100%;
-  display: block;
-}
-
-h1, .trabajemos {
-  font-size: 40px;
-  font-weight: 700;
-  color: $secondary-color;
-  font-family: $font-family-secondary;
-  text-align: center;
-  margin: 50px auto 0;
-
-  &:hover {
-    font-size: 50px;
-    @include transition-effect(all, 0.3s);
-  }
-}
-
-h2 {
-  font-size: 20px;
-  color: $primary-color;
-  text-align: center;
-  margin: 0 auto 100px;
-}
 
 /* INDEX */
 h4 {
@@ -190,33 +91,3 @@ h4 {
 }
 
 /* Responsive */
-@media (max-width: 1000px) {
-  #images {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-  }
-
-  h1 .trabajemos {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 18px;
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  #footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-  .grid_index {
-    grid-template-columns: 1fr;
-  }
-}
