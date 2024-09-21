@@ -208,6 +208,7 @@ h4 {
     position: relative;
     max-width: 800px;
     margin: 80px auto;
+    padding-left: 50px; /* Espacio para la línea */
     font-size: 20px;
     font-family: "Montserrat" , sans-serif;
     color: #E66440;
@@ -221,6 +222,59 @@ h3 {
 
 .texto_cv_negrita {
     font-weight: 600;
+}
+
+.timeline_cv::before {
+    content: '';
+    position: absolute;
+    left: 45px; 
+    top: 20px;
+    bottom: 160px;
+    width: 4px;
+    background-color: #EBADB9;
+}
+
+.timeline_cv .item1_cv, 
+.timeline_cv .item2_cv,
+.timeline_cv .item3_cv,
+.timeline_cv .item4_cv,
+.timeline_cv .item5_cv,
+.timeline_cv .item6_cv,
+.timeline_cv .item7_cv {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline_cv .item1_cv::before, 
+.timeline_cv .item2_cv::before,
+.timeline_cv .item3_cv::before,
+.timeline_cv .item4_cv::before,
+.timeline_cv .item5_cv::before,
+.timeline_cv .item6_cv::before,
+.timeline_cv .item7_cv::before {
+    content: '';
+    position: absolute;
+    left: -74px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #EBADB9;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.item1_cv, .item2_cv, .item3_cv, .item4_cv, .item5_cv, .item6_cv, .item7_cv {
+    margin-left: 60px;
+    padding-left: 20px;
+    position: relative;
+    color: #E66440;
+}
+
+.año1, .año2, .año3, .año4, .año5, .año6, .año7 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: -200px;
 }
 
 .contenedor_img_cv {
