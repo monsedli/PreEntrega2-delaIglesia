@@ -12,15 +12,7 @@
     min-height: 100vh;
 }
 
-.portada_contacto, 
-.portada_proyectos, 
-.portada_cv, 
-.portada_index, 
-.ondas_footer, 
-.portada_about, 
-.gif_main, 
-.about_main, 
-.cuadricula_main {
+.portada_contacto, .portada_proyectos, .portada_cv, .portada_index, .ondas_footer, .portada_about, .gif_main, .about_main, .cuadricula_main {
     max-width: 100%;
     display: block;
 }
@@ -40,6 +32,8 @@ h1, .trabajemos {
 }
 
 h2 {
+    font-family: $font-family-primary;
+    font-weight: 400;
     font-size: 20px;
     color: $primary-color;
     text-align: center;

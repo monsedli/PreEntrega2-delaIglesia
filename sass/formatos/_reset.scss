@@ -7,15 +7,15 @@ $font-family-secondary: "Poppins", sans-serif;
 
 /* Mixins */
 @mixin transition-effect($property, $time) {
-  transition: $property $time ease-in-out;
+    transition: $property $time ease-in-out;
 }
 
 /* Global */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-style: none;
-  text-decoration: none !important;
-  font-family: $font-family-primary;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: none;
+    text-decoration: none !important;
+    font-family: $font-family-primary;
 }
