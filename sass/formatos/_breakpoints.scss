@@ -1,7 +1,25 @@
 @media (max-width: 1000px) {
     #images {
-        grid-template-columns: 1fr;
-        row-gap: 20px;
+    width: 100%;
+    height: auto;
+    margin: 70px auto;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    /*fila 1*/"floralia"
+    /*fila 2*/"srtapeel"
+    /*fila 3*/"atipico"
+    /*fila 4*/"ch"
+    /*fila 5*/"entrenate"
+    /*fila 6*/"zorzal"
+    /*fila 7*/"thomas"
+    /*fila 8*/"gula"
+    /*fila 9*/"sedal"
+    /*fila 10*/"skip"
+    ;
+    row-gap: 20px;
     }
 
     h1 .trabajemos {
@@ -10,8 +28,9 @@
 
     h2 {
         font-size: 18px;
-        margin-bottom: 50px;
+        margin: 0 0 50px 0;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -21,10 +40,15 @@
     }
 
     .card {
-        width: 100%;
+        width: 100%; 
     }
 
     .grid_index {
+        width: 100%;
+        height: auto;
+        display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 }
+
