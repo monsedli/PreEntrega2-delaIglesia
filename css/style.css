@@ -27,7 +27,7 @@
   }
   .card {
     width: 100% !important; /* Ancho completo en mobile para mostrar una tarjeta */
-    max-width: 350px !important; /* Ancho máximo para mantener el tamaño deseado */
+    max-width: 600px !important; /* Ancho máximo para mantener el tamaño deseado */
     margin: 0 auto !important; /* Centrar la tarjeta */
   }
   .grid_index {
@@ -42,26 +42,31 @@
     font-size: 30px;
   }
   h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 0 50px 0;
   }
   .texto_about {
-    font-size: 22px !important;
-    padding: 100px 80px !important;
+    font-size: 12px !important;
+    padding: 80px 50px !important;
   }
   .timeline_cv {
-    max-width: 550px !important;
-    font-size: 20px !important;
+    max-width: 400px !important;
+    font-size: 12px !important;
+    margin-right: 30px !important;
   }
   .timeline_cv::before {
-    left: 80px !important;
+    left: 70px !important;
+  }
+  .item1_cv, .item2_cv, .item3_cv, .item4_cv, .item5_cv, .item6_cv, .item7_cv {
+    margin-left: 30px !important;
   }
   .item1_cv::before, .item2_cv::before, .item3_cv::before, .item4_cv::before, .item5_cv::before, .item6_cv::before, .item7_cv::before {
-    left: -37px !important;
+    left: -18px !important;
   }
   .item1_cv .año1, .item1_cv .año2, .item1_cv .año3, .item1_cv .año4, .item1_cv .año5, .item1_cv .año6, .item1_cv .año7, .item2_cv .año1, .item2_cv .año2, .item2_cv .año3, .item2_cv .año4, .item2_cv .año5, .item2_cv .año6, .item2_cv .año7, .item3_cv .año1, .item3_cv .año2, .item3_cv .año3, .item3_cv .año4, .item3_cv .año5, .item3_cv .año6, .item3_cv .año7, .item4_cv .año1, .item4_cv .año2, .item4_cv .año3, .item4_cv .año4, .item4_cv .año5, .item4_cv .año6, .item4_cv .año7, .item5_cv .año1, .item5_cv .año2, .item5_cv .año3, .item5_cv .año4, .item5_cv .año5, .item5_cv .año6, .item5_cv .año7, .item6_cv .año1, .item6_cv .año2, .item6_cv .año3, .item6_cv .año4, .item6_cv .año5, .item6_cv .año6, .item6_cv .año7, .item7_cv .año1, .item7_cv .año2, .item7_cv .año3, .item7_cv .año4, .item7_cv .año5, .item7_cv .año6, .item7_cv .año7 {
-    width: 100px !important;
-    left: -120px !important;
+    width: 50px !important;
+    left: -70px !important;
+    font-size: 16px !important;
   }
   .contenedor_img_cv {
     display: block !important;
@@ -72,8 +77,8 @@
   #images {
     width: 100%;
     height: auto;
-    margin: 50px auto;
-    padding: 0 80px !important;
+    margin: 70px auto !important;
+    padding: 0 50px !important;
     display: grid !important;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -81,24 +86,34 @@
     row-gap: 20px;
   }
   .contenedor_contacto h1 {
-    font-size: 50px !important;
+    font-size: 35px !important;
   }
   .contenedor_contacto h2 {
-    font-size: 25px !important;
+    font-size: 22px !important;
     margin: 0 0 50px !important;
   }
   .contenedor_contacto .formulario_contacto input, .contenedor_contacto .formulario_contacto textarea {
-    width: 70% !important;
-  }
-  .logo_contacto {
     width: 80% !important;
   }
+  .logo_contacto {
+    width: 90% !important;
+    margin-top: 20px !important;
+  }
   .contenedor_informacion {
-    padding: 100px !important;
+    padding: 50px !important;
     display: grid !important;
     grid-template-columns: repeat(2, fr);
     grid-template-rows: repeat(2, fr);
     grid-template-areas: "iconos_contacto1 texto_contacto1" "iconos_contacto2 texto_contacto2";
+  }
+  .iconos_contacto1, .iconos_contacto2 {
+    width: 40px !important;
+    margin-bottom: 3px !important;
+  }
+  .texto_contacto1, .texto_contacto2 {
+    font-size: 18px !important;
+    margin-top: 10px !important;
+    justify-content: center !important;
   }
   #footer {
     flex-direction: column;
