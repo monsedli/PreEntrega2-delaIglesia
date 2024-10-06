@@ -1,207 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--LIBRERÍA FONT AWESOME-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!--LIBRERÍA BTS-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--LIBRERÍA FONT AWESOME-->
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        
-        <!--LIBRERÍA BTS-->
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <head>
-          
-          <!--LIBRERIA ANIMATE.CSS-->
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-          />
-        </head>
-
-        <!--ESTILOS CSS-->
-        <link rel="stylesheet" href="css/style.css">
-
-        <link rel="icon" href="icons/favicon-08.png">
-        <title>inicio</title>
+    
+    <!--LIBRERIA ANIMATE.CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     </head>
 
-    <body id="body"> <!---->
+    <!--ESTILOS CSS-->
+    <link rel="stylesheet" href="css/style.css">
 
-        <header id="header"> <!--ESTRUCTURA 1= HEADER (CABECERA Y NAVEGACION)-->
-            <nav class="navbar navbar-expand-lg align-content-center">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img class="navBar__logo" src="icons/logo_header-14.png" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end align-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="index.html">inicio</a>
-                        <a class="nav-link" href="pages/about.html">about</a>
-                        <a class="nav-link" href="pages/cv.html">cv</a>
-                        <a class="nav-link" href="pages/proyectos.html">proyectos</a>
-                        <a class="nav-link" href="pages/contacto.html">contacto</a>
-                    </div>
-                    </div>
-                </div>
-                </nav>
-        </header>
+    <link rel="icon" href="icons/favicon-08.png">
+    <title>inicio</title>
+  </head>
 
-        <main id="main"> <!--ESTRUCTURA 2= MAIN (CONTENIDO/CAJAS)-->
+  <body id="body"> 
 
-            <img class="portada_index" src="images/bannerhead-07.jpg" alt="portada">
+    <header id="header"> <!--ESTRUCTURA 1= HEADER (CABECERA Y NAVEGACION)-->
+      <nav class="navbar navbar-expand-lg align-content-center">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="navBar__logo" src="icons/logo_header-14.png" alt="logo"></a>
+          <!--Menú hamburguesa BTS-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-content-center" id="navbarNavAltMarkup">
+          
+          <div class="navbar-nav"> <!--Enlace a distintas páginas-->
+            <a class="nav-link" href="index.html">inicio</a>
+            <a class="nav-link" href="pages/about.html">about</a>
+            <a class="nav-link" href="pages/cv.html">cv</a>
+            <a class="nav-link" href="pages/proyectos.html">proyectos</a>
+            <a class="nav-link" href="pages/contacto.html">contacto</a>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-            <h4>proyectos</h4>
+    <main id="main"> <!--ESTRUCTURA 2= MAIN (CONTENIDO/CAJAS)-->
 
-            <div id="carouselExample" class="carousel slide animate__animated animate__fadeInUpBig" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-md-4">
+      <!--PORTADAS-->
+      <img class="portada_index" src="images/bannerhead-07.jpg" alt="portada">
+      <img class="portada_mobile" src="images/bannerhead-mobile.jpg" alt="portada mobile">
+
+      <h4>proyectos</h4>
+
+      <div id="carouselExample" class="carousel slide animate__animated animate__fadeInUpBig" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
                         <div class="card">
-                          <img src="images/carrousel-img-14.jpg" class="card-img-top" alt="srta peel">
-                          <div class="card-body">
-                            <h5 class="card-title">Social Media</h5>
-                            <p class="card-text">Planificación estratégica del calendario de contenidos asegurando una comunicación coherente y efectiva alineada con los objetivos de la marca. Diseño gráfico para web y ads optimizando la presencia visual y el impacto en el público objetivo.</p>
-                          </div>
+                            <img src="images/carrousel-img-14.jpg" class="card-img-top" alt="srta peel">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Media</h5>
+                                <p class="card-text">Planificación estratégica del calendario de contenidos asegurando una comunicación coherente y efectiva alineada con los objetivos de la marca. Diseño gráfico para web y ads optimizando la presencia visual y el impacto en el público objetivo.</p>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
                         <div class="card">
-                          <img src="images/carrousel-img-18.jpg" class="card-img-top" alt="el zorzal">
-                          <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Diseño de logo de acuerdo a la esencia y valores de la marca. Desarrollo integral del branding, incluyendo cartelería comercial y papelería empresarial, asegurando una identidad visual coherente y profesional en todos los puntos de contacto.</p>
-                          </div>
+                            <img src="images/carrousel-img-18.jpg" class="card-img-top" alt="el zorzal">
+                            <div class="card-body">
+                                <h5 class="card-title">Graphic Design</h5>
+                                <p class="card-text">Diseño de logo de acuerdo a la esencia y valores de la marca. Desarrollo integral del branding, incluyendo cartelería comercial y papelería empresarial, asegurando una identidad visual coherente y profesional en todos los puntos de contacto.</p>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
                         <div class="card">
-                          <img src="images/carrousel-img-23.jpg" class="card-img-top" alt="skip">
-                          <div class="card-body">
-                            <h5 class="card-title">Art Direction</h5>
-                            <p class="card-text">Dirección de arte y vestuario para spot publicitario “Historias de Closet” Protagonizado por Lucía Soria para el jabón líquido para diluir de Skip.
-                                <br><br>Dirección: Benjamín Silva
-                                <br>Producción: Paloma Rocha<br>
+                            <img src="images/carrousel-img-23.jpg" class="card-img-top" alt="skip">
+                            <div class="card-body">
+                                <h5 class="card-title">Art Direction</h5>
+                                <p class="card-text">Dirección de arte y vestuario para spot publicitario “Historias de Closet” Protagonizado por Lucía Soria para el jabón líquido para diluir de Skip.
+                                    <br><br>Dirección: Benjamín Silva
+                                    <br>Producción: Paloma Rocha<br>
                                 </p>
-                          </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  
-                  <!-- Siguiente grupo de tarjetas -->
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-md-4">
+                </div>
+            </div>
+    
+            <!-- Siguiente grupo de tarjetas -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
                         <div class="card">
-                          <img src="images/carrousel-img-15.jpg" class="card-img-top" alt="atípico">
-                          <div class="card-body">
-                            <h5 class="card-title">Social Media</h5>
-                            <p class="card-text">Planificación estratégica del calendario de contenidos asegurando una comunicación coherente y efectiva alineada con los objetivos de la marca. Fotos de producto y lifestyle para redes sociales y web. Desarrollo de reels de impacto. Cobertura de eventos.</p>
-                          </div>
+                            <img src="images/carrousel-img-15.jpg" class="card-img-top" alt="atípico">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Media</h5>
+                                <p class="card-text">Planificación estratégica del calendario de contenidos asegurando una comunicación coherente y efectiva alineada con los objetivos de la marca. Fotos de producto y lifestyle para redes sociales y web. Desarrollo de reels de impacto. Cobertura de eventos.</p>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card">
-                          <img src="images/carrousel-img-16.jpg" class="card-img-top" alt="caillon hamonet">
-                          <div class="card-body">
-                            <h5 class="card-title">Social Media</h5>
-                            <p class="card-text">Planificación estratégica del calendario de contenidos asegurando una comunicación coherente y efectiva alineada con los objetivos de la marca. Fotos lifestyle para redes sociales. Desarrollo de reels de impacto. Cobertura de ferias y conferencias.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card">
-                          <img src="images/carrousel-img-20.jpg" class="card-img-top" alt="gula">
-                          <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Diseño de flyers y menú para restaurant teniendo en cuenta el branding ya existente de la marca.<br><br><br><br><br></p>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/carrousel-img-16.jpg" class="card-img-top" alt="caillon hamonet">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Media</h5>
+                                <p class="card-text">Planificación estratégica del calendario de contenidos asegurando una comunicación coherente y efectiva alineada con los objetivos de la marca. Fotos lifestyle para redes sociales. Desarrollo de reels de impacto. Cobertura de ferias y conferencias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/carrousel-img-20.jpg" class="card-img-top" alt="gula">
+                            <div class="card-body">
+                                <h5 class="card-title">Graphic Design</h5>
+                                <p class="card-text">Diseño de flyers y menú para restaurant teniendo en cuenta el branding ya existente de la marca.<br><br><br><br><br></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              
-                <!-- Controles del carrusel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-              
-
-            <div class="grid_index">
-                <a href="pages/proyectos.html">
-                    <img class="socialmedia_index" src="images/home-medios-01.jpg" alt="social"> 
-                </a>
-                <a href="pages/proyectos.html">
-                    <img class="graphicdesign_index" src="images/home-medios-04.jpg" alt="graphic">
-                </a>
-                <a href="pages/proyectos.html">
-                    <img class="web_index" src="images/home-medios-02.jpg" alt="web">
-                </a>
-                <a href="pages/proyectos.html">
-                    <img class="artdirection_index" src="images/home-medios-03.jpg" alt="art">
-                </a>
-                </div>
-
-            <img class="gif_main" src="images/marcas-01.gif" alt="marcas">
-
-            <h1><a class="trabajemos" href="../pages/contacto.html">¡Trabajemos juntos!</a></h1>
-            <h2>Hagamos tus ideas realidad.</h2>
-
-            <img class="ondas_footer" src="images/ondas-footer-15.png" alt="">
-
-        </main>
-
-        <footer id="footer"> <!--ESTRUCTURA 3= FOOTER (PIE DE PAGINA)-->
-            <div class="logo_footer">
-                <img src="icons/logo_footer-13.png" alt="">
             </div>
+        </div>
+    
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+        
 
-            <div class="links_footer_1">
-                <ul>
-                    <li><a href="pages/about.html">about</a></li>
-                    <li><a href="pages/cv.html">cv</a></li>
-                </ul>
-            </div>
+      <!--Cuadricula de imágenes-->
+      <div class="grid_index">
+        <a href="pages/proyectos.html">
+          <img class="socialmedia_index" src="images/home-medios-01.jpg" alt="social"> 
+        </a>
+        <a href="pages/proyectos.html">
+          <img class="graphicdesign_index" src="images/home-medios-04.jpg" alt="graphic">
+        </a>
+        <a href="pages/proyectos.html">
+          <img class="web_index" src="images/home-medios-02.jpg" alt="web">
+        </a>
+        <a href="pages/proyectos.html">
+          <img class="artdirection_index" src="images/home-medios-03.jpg" alt="art">
+        </a>
+      </div>
 
-            <div class="links_footer_2">
-            <ul>
-                <li><a href="pages/proyectos.html">proyectos</a></li>
-                <li><a href="">social media</a></li>
-                <li><a href="">graphic design</a></li>
-                <li><a href="">web</a></li>
-                <li><a href="">art direction</a></li>
-            </ul>
-            </div>
+      <!--Gif marcas-->
+      <img class="gif_main" src="images/marcas-01.gif" alt="marcas">
 
-            <div class="redes_footer">
-                <form class="formulario_footer">
-                    <label for="email">contacto</label>
-                    <input type="text" id="email" placeholder="e-mail"> 
-                </form>
-                <a class="redes_footer_behance" href="https://www.behance.net/monserratdli"><img src="icons/redes-09.png" alt=""></a>
-                <a class="redes_footer_linkedin" href="https://www.linkedin.com/feed/"><img src="icons/redes-10.png" alt=""></a>
-                <a class="redes_footer_instagram" href="https://www.instagram.com/monsedli/?hl=es"><img src="icons/redes-11.png" alt=""></a>
-                <a class="redes_footer_youtube" href="https://www.youtube.com/@monsedit6579"><img src="icons/redes-12.png" alt=""></a>
-                
+      <!--Trabajemos-->
+      <h1><a class="trabajemos" href="../pages/contacto.html">¡Trabajemos juntos!</a></h1>
+      <h2>Hagamos tus ideas realidad.</h2>
 
-            </div>
-        </footer>
+      <img class="ondas_footer" src="images/ondas-footer-15.png" alt="">
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    </main>
 
-    </body>
+    <footer id="footer"> <!--ESTRUCTURA 3= FOOTER (PIE DE PAGINA)-->
+      <!--Logo-->
+      <div class="logo_footer">
+        <img src="icons/logo_footer-13.png" alt="">
+      </div>
+
+      <!--Links a diferentes páginas-->
+      <div class="links_footer_1">
+        <ul>
+          <li><a href="pages/about.html">about</a></li>
+          <li><a href="pages/cv.html">cv</a></li>
+        </ul>
+      </div>
+
+      <div class="links_footer_2">
+        <ul>
+          <li><a href="pages/proyectos.html">proyectos</a></li>
+          <li><a href="">social media</a></li>
+          <li><a href="">graphic design</a></li>
+          <li><a href="">web</a></li>
+          <li><a href="">art direction</a></li>
+        </ul>
+      </div>
+
+      <!--Formulario-->
+      <div class="redes_footer">
+        <form class="formulario_footer">
+          <label for="email">contacto</label>
+          <input type="text" id="email" placeholder="e-mail"> 
+        </form>
+        <!--Redes-->
+        <a class="redes_footer_behance" href="https://www.behance.net/monserratdli"><img src="icons/redes-09.png" alt=""></a>
+        <a class="redes_footer_linkedin" href="https://www.linkedin.com/feed/"><img src="icons/redes-10.png" alt=""></a>
+        <a class="redes_footer_instagram" href="https://www.instagram.com/monsedli/?hl=es"><img src="icons/redes-11.png" alt=""></a>
+        <a class="redes_footer_youtube" href="https://www.youtube.com/@monsedit6579"><img src="icons/redes-12.png" alt=""></a>
+      </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+  </body>
 </html>

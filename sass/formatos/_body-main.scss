@@ -12,9 +12,13 @@
     min-height: 100vh;
 }
 
-.portada_contacto, .portada_proyectos, .portada_cv, .portada_index, .ondas_footer, .portada_about, .gif_main, .about_main, .cuadricula_main {
+.portada_contacto, .portada_proyectos, .portada_cv, .portada_index, .ondas_footer, .portada_about, .gif_main, .about_main, .cuadricula_main, .portada_contacto_mobile, .portada_proyectos_mobile, .portada_cv_mobile, .portada_about_mobile, .portada_mobile, .about_main_mobile, .cuadricula_main_mobile, .ondas_contacto {
     max-width: 100%;
-    display: block;
+    height: auto;
+}
+
+.portada_mobile, .portada_about_mobile, .portada_contacto_mobile, .portada_cv_mobile, .portada_proyectos_mobile, .about_main_mobile, .cuadricula_main_mobile {
+    display: none;
 }
 
 h1, .trabajemos {
@@ -23,7 +27,8 @@ h1, .trabajemos {
     color: $secondary-color;
     font-family: $font-family-secondary;
     text-align: center;
-    margin: 50px auto 0;
+    margin: 0 auto;
+    padding-top: 50px;
 
     &:hover {
         font-size: 50px;

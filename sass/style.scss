@@ -20,6 +20,7 @@
 
 
 /* INDEX */
+
 h4 {
     font-size: 40px;
     font-weight: 600;
@@ -30,9 +31,16 @@ h4 {
     margin: 50px auto 0 auto;
 }
 
+.carrousel-item {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
 .carousel-inner {
     padding: 10px 80px 70px 80px;
 }
+
+
 
 .card {
     width: 350px;

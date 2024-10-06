@@ -1,10 +1,88 @@
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
+    .portada_index, .portada_about, .portada_cv, .portada_contacto, .portada_proyectos, .about_main, .cuadricula_main {
+        display: none !important;
+    }
+    .portada_mobile, .portada_about_mobile, .portada_contacto_mobile, .portada_cv_mobile, .portada_proyectos_mobile, .about_main_mobile, .cuadricula_main_mobile {
+        display: block !important;
+    }
+
+    .carousel-inner {
+        padding: 10px;
+    }
+
+    .carousel-item {
+        display: flex !important;
+        justify-content: center !important; /* Centrar la tarjeta en mobile */
+    }
+
+
+    .card {
+        width: 100% !important; /* Ancho completo en mobile para mostrar una tarjeta */
+        max-width: 350px !important; /* Ancho máximo para mantener el tamaño deseado */
+        margin: 0 auto !important; /* Centrar la tarjeta */
+    }
+
+    .grid_index {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "social"
+        "graphic"
+        "web"
+        "art"
+        !important;
+    }
+
+    h1 .trabajemos {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin: 0 0 50px 0;
+    }
+
+    .texto_about {
+        font-size: 22px !important;
+        padding: 100px 80px !important;
+    }
+
+    .timeline_cv {
+        max-width: 550px !important;
+        font-size: 20px !important;
+
+        &::before {
+            left: 80px !important;
+        }
+    }
+
+    .item1_cv, .item2_cv, .item3_cv, .item4_cv, .item5_cv, .item6_cv, .item7_cv {
+        &::before {
+            left: -37px !important;
+        }
+        .año1, .año2, .año3, .año4, .año5, .año6, .año7 {
+            width: 100px !important;
+            left: -120px !important;
+        }
+    }
+
+    .contenedor_img_cv {
+        display: block !important;
+
+        .educacion_cv, .programas_cv {
+            width: 100% !important;
+        }
+    }
+
     #images {
     width: 100%;
     height: auto;
-    margin: 70px auto;
-    padding: 0 50px;
-    display: grid;
+    margin: 50px auto;
+    padding: 0 80px !important;
+    display: grid !important;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -18,37 +96,45 @@
     /*fila 8*/"gula"
     /*fila 9*/"sedal"
     /*fila 10*/"skip"
+    !important
     ;
     row-gap: 20px;
     }
 
-    h1 .trabajemos {
-        font-size: 30px;
+    .contenedor_contacto {
+        h1 {
+            font-size: 50px !important;
+        }
+        h2 {
+            font-size: 25px !important;
+            margin: 0 0 50px !important;
+        }
+        .formulario_contacto {
+            input, textarea {
+                width: 70% !important;
+            }
+        }
     }
 
-    h2 {
-        font-size: 18px;
-        margin: 0 0 50px 0;
+    .logo_contacto {
+        width: 80% !important;
     }
 
-}
+    .contenedor_informacion {
+        padding: 100px !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, fr);
+        grid-template-rows: repeat(2, fr);
+        grid-template-areas: 
+        /*fila 1*/ "iconos_contacto1 texto_contacto1"
+        /*fila 2*/ "iconos_contacto2 texto_contacto2"
+    }
 
-@media (max-width: 768px) {
+
     #footer {
         flex-direction: column;
         text-align: center;
     }
 
-    .card {
-        width: 100%; 
-    }
-
-    .grid_index {
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
 }
 
