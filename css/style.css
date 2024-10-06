@@ -12,23 +12,11 @@
 }
 
 @media (max-width: 768px) {
-  .portada_index, .portada_about, .portada_cv, .portada_contacto, .portada_proyectos, .about_main, .cuadricula_main {
+  .portada_index, .portada_about, .portada_cv, .portada_contacto, .portada_proyectos, .about_main, .cuadricula_main, .carrousel_desktop {
     display: none !important;
   }
-  .portada_mobile, .portada_about_mobile, .portada_contacto_mobile, .portada_cv_mobile, .portada_proyectos_mobile, .about_main_mobile, .cuadricula_main_mobile {
+  .portada_mobile, .portada_about_mobile, .portada_contacto_mobile, .portada_cv_mobile, .portada_proyectos_mobile, .about_main_mobile, .cuadricula_main_mobile, .carrousel_mobile {
     display: block !important;
-  }
-  .carousel-inner {
-    padding: 10px;
-  }
-  .carousel-item {
-    display: flex !important;
-    justify-content: center !important; /* Centrar la tarjeta en mobile */
-  }
-  .card {
-    width: 100% !important; /* Ancho completo en mobile para mostrar una tarjeta */
-    max-width: 600px !important; /* Ancho máximo para mantener el tamaño deseado */
-    margin: 0 auto !important; /* Centrar la tarjeta */
   }
   .grid_index {
     width: 100%;
@@ -46,12 +34,12 @@
     margin: 0 0 50px 0;
   }
   .texto_about {
-    font-size: 12px !important;
+    font-size: 14px !important;
     padding: 80px 50px !important;
   }
   .timeline_cv {
     max-width: 400px !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     margin-right: 30px !important;
   }
   .timeline_cv::before {
@@ -177,12 +165,12 @@
   min-height: 100vh;
 }
 
-.portada_contacto, .portada_proyectos, .portada_cv, .portada_index, .ondas_footer, .portada_about, .gif_main, .about_main, .cuadricula_main, .portada_contacto_mobile, .portada_proyectos_mobile, .portada_cv_mobile, .portada_about_mobile, .portada_mobile, .about_main_mobile, .cuadricula_main_mobile, .ondas_contacto {
+.portada_contacto, .portada_proyectos, .portada_cv, .portada_index, .ondas_footer, .portada_about, .gif_main, .about_main, .cuadricula_main, .portada_contacto_mobile, .portada_proyectos_mobile, .portada_cv_mobile, .portada_about_mobile, .portada_mobile, .about_main_mobile, .cuadricula_main_mobile, .ondas_contacto, .carrousel_desktop {
   max-width: 100%;
   height: auto;
 }
 
-.portada_mobile, .portada_about_mobile, .portada_contacto_mobile, .portada_cv_mobile, .portada_proyectos_mobile, .about_main_mobile, .cuadricula_main_mobile {
+.portada_mobile, .portada_about_mobile, .portada_contacto_mobile, .portada_cv_mobile, .portada_proyectos_mobile, .about_main_mobile, .cuadricula_main_mobile, .carrousel_mobile {
   display: none;
 }
 
