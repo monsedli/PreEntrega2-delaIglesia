@@ -18,6 +18,17 @@
   .portada_mobile, .portada_about_mobile, .portada_contacto_mobile, .portada_cv_mobile, .portada_proyectos_mobile, .about_main_mobile, .cuadricula_main_mobile, .carrousel_mobile {
     display: block !important;
   }
+  .carousel-inner {
+    padding: 10px 50px 70px 50px !important;
+  }
+  .card {
+    width: 100% !important;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    margin: 250px 5px 0 5px !important;
+    width: 20px;
+    height: 20px;
+  }
   .grid_index {
     width: 100%;
     height: auto;
@@ -441,11 +452,6 @@ h4 {
   margin: 50px auto 0 auto;
 }
 
-.carrousel-item {
-  display: flex !important;
-  flex-direction: row !important;
-}
-
 .carousel-inner {
   padding: 10px 80px 70px 80px;
 }
@@ -472,6 +478,14 @@ h4 {
   font-size: 13px;
   color: #E66440;
   padding: 0 30px 30px 30px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  margin: 900px 15px 0 15px;
+  background-color: #E66440;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .grid_index {
