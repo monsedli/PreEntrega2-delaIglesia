@@ -1,6 +1,31 @@
+.filtros {
+    margin: 90px 50px 20px 580px;
+
+    input {
+        display: none;
+    }
+
+    label {
+        margin-right: 10px;
+        padding: 5px 10px;
+        background-color: white;
+        border: 1px solid $secondary-color;
+        cursor: pointer;
+        font-size: 14px;
+        color: $secondary-color;
+    }
+    }
+
+
+    input:checked + label {
+        background-color: $secondary-color;
+        color: white;
+        }
+
+
 #images {
     display: grid;
-    margin: 100px auto;
+    margin: 0 auto 100px auto;
     padding: 0 150px;
     grid-template-columns: repeat(2, fr);
     grid-template-rows: repeat(5, fr);

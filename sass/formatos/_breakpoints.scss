@@ -15,9 +15,7 @@
     }
     
     .carousel-control-prev, .carousel-control-next {
-        margin: 250px 5px 0 5px !important;
-        width: 20px;
-        height: 20px;
+        display: none;
     }
 
 
@@ -76,6 +74,18 @@
 
         .educacion_cv, .programas_cv {
             width: 100% !important;
+        }
+    }
+
+    .filtros {
+        align-items: center !important;
+        margin: 20px auto 10px auto !important;
+        text-align: end !important;
+
+        label {
+            margin-right: 5px !important;
+            padding: 3px 3px !important;
+            font-size: 12px !important;
         }
     }
 

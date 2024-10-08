@@ -25,9 +25,7 @@
     width: 100% !important;
   }
   .carousel-control-prev, .carousel-control-next {
-    margin: 250px 5px 0 5px !important;
-    width: 20px;
-    height: 20px;
+    display: none;
   }
   .grid_index {
     width: 100%;
@@ -72,6 +70,16 @@
   }
   .contenedor_img_cv .educacion_cv, .contenedor_img_cv .programas_cv {
     width: 100% !important;
+  }
+  .filtros {
+    align-items: center !important;
+    margin: 20px auto 10px auto !important;
+    text-align: end !important;
+  }
+  .filtros label {
+    margin-right: 5px !important;
+    padding: 3px 3px !important;
+    font-size: 12px !important;
   }
   #images {
     width: 100%;
@@ -355,9 +363,30 @@ ul li a:hover {
   height: auto;
 }
 
+.filtros {
+  margin: 90px 50px 20px 580px;
+}
+.filtros input {
+  display: none;
+}
+.filtros label {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid #EBADB9;
+  cursor: pointer;
+  font-size: 14px;
+  color: #EBADB9;
+}
+
+input:checked + label {
+  background-color: #EBADB9;
+  color: white;
+}
+
 #images {
   display: grid;
-  margin: 100px auto;
+  margin: 0 auto 100px auto;
   padding: 0 150px;
   grid-template-columns: repeat(2, fr);
   grid-template-rows: repeat(5, fr);
